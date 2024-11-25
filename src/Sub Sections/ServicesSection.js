@@ -4,10 +4,29 @@ import ServicesComponent from '../Screen Components/ServicesComponent'
 function ServicesSection() {
 
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1280);
+  const [tabScreen, setTabScreen]=useState(false)
 
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 1280);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // For tab Screen 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 786) {
+        setTabScreen(true)
+      }else {
+        setTabScreen(false)
+      }
     };
 
     window.addEventListener("resize", handleResize);
@@ -53,7 +72,8 @@ function ServicesSection() {
         wedding="Reception"
         propAlignItems="flex-end"
         propJustifyContent="center"
-        propMarginTop="-100px"
+        // propMarginTop="-100px"
+        propMarginTop={ !tabScreen ? "-100px" : "0px"}
         propHeight="300px"
         propHeight1="466.7px"
       />
