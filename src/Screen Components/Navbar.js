@@ -38,26 +38,39 @@ function Navbar( { location }) {
         ABOUT US</div>
     </div>
     <div className="flex flex-row items-start justify-start gap-2.5 lg:hidden">
-      <img
-        className="w-6 relative h-6 overflow-hidden shrink-0"
-        alt=""
-        src="/magex.svg"
-      />
+
+      <a className='h-[24px] cursor-pointer' href='https://www.instagram.com/weddings.by.rishabh/' target='_blank'>
       <img
         className="w-6 relative h-6 overflow-hidden shrink-0"
         alt=""
         src="/letsiconsinsta.svg"
       />
+      </a>
+
+      <a className='h-[24px] cursor-pointer' href='https://www.facebook.com/weddingsbyrishabh' target='_blank'>
       <img
         className="w-6 relative h-6 overflow-hidden shrink-0"
         alt=""
         src="/antdesignfacebookoutlined.svg"
       />
+      </a>
+
+      <a className='h-[24px] cursor-pointer' href='https://www.youtube.com/@weddingsbyrishabh' target='_blank'>
       <img
         className="w-6 relative h-6 overflow-hidden shrink-0"
         alt=""
-        src="/icbaselinewhatsapp.svg"
+        src="/youtube-icon.svg"
       />
+      </a>
+
+      <a className='h-[24px] cursor-pointer' href='https://in.pinterest.com/weddingsbyrishabh/' target='_blank'>
+      <img
+        className="w-6 relative h-6 overflow-hidden shrink-0"
+        alt=""
+        src="/pinterest-icon.svg"
+      />
+      </a>
+
     </div>
 
     {/* Ham Menu */}
