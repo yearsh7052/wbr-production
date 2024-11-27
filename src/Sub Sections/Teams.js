@@ -4,20 +4,20 @@ import TeamsComp from '../Screen Components/TeamsComp';
 
 function Teams() {
 
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1280);
+  // const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1280);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 1280);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsSmallScreen(window.innerWidth <= 1280);
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   // Cleanup the event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
 
   return (
@@ -36,27 +36,14 @@ function Teams() {
     <div className="flex-1 relative font-poppins text-xl tab:text-[16px] px-32 lg:px-20 tab:px-5 phn:px-0">{`Our team is a diverse group of passionate individuals dedicated to delivering innovative solutions. We bring together expertise across various fields, ensuring a collaborative approach to every project.  `}</div>
     <div className="w-full flex flex-row items-center justify-center text-left 
      xl:gap-5 gap-10 tab:gap-2 tab:flex-wrap phn:gap-5">
-      {/* <ServicesComponent
-        image="/image3@2x.png"
-        privateParty={"Private Party"}
-        image1="/image4@2x.png"
-        birthdayParty="Birthday Party"
-        image2="/image5@2x.png"
-        wedding="Wedding"
-        propMarginTop={isSmallScreen ? "-100px" : undefined}
-        marginB={'mb-[100px]'}
-      /> */}
+
       <TeamsComp
-        image="/employee1.jpg"
-        employeeName="Mr/Mrs ....."  
+        image="/rishabh-jindal.jpg"
+        employeeName="Rishabh Jindal, Founder"  
       />
       <TeamsComp
-        image="/employee2.jpg"
-        employeeName="Mr/Mrs ....."  
-      />
-      <TeamsComp
-        image="/employee3.jpg"
-        employeeName="Mr/Mrs ....."  
+        image="/deepti-singhal.jpg"
+        employeeName="Deepti Singhal, Co-Founder"  
       />
     </div>
   </div>
