@@ -44,7 +44,7 @@ const TeamsComp = ({
 
   return (
     <div
-      className={`flex flex-row items-start justify-start  text-left  text-darkslateblue-100 font-cormorant-garamond  ${className} phn:w-full
+      className={`flex flex-row items-start justify-start  text-left  text-darkslateblue-100 font-cormorant-garamond  ${className} 
         `}
     //   style={frameDivStyle}
     >
@@ -54,14 +54,15 @@ const TeamsComp = ({
       [background:linear-gradient(180deg,_#d9d4e6,_rgba(217,_212,_230,_0.4))] 
       box-border tab:w-full tab:p-2  overflow-hidden group">
         <img
-          className="w-[250px] h-[300px] relative  object-cover overflow-hidden  lg:w-[200px] lg:h-[250px] phn:w-full
+          className="w-[250px] h-[300px] relative  object-contain overflow-hidden  lg:w-[200px] lg:h-[250px] phn:w-full
           
           transform transition-all duration-500 hover:scale-125 cursor-pointer"
           alt=""
           src={image}
         //   style={imageIconStyle}
         />
-        <div className="relative text-8xl font-semibold group-hover:text-white transform transition-all duration-1000 group-hover:bg-darkslateblue-100 group-hover:px-3 ">{employeeName}</div>
+        <div className="relative text-8xl font-semibold group-hover:text-white transform transition-all duration-1000 group-hover:bg-darkslateblue-100 group-hover:px-3
+         max-w-[200px] ">{employeeName}</div>
       </div>
     </div>
   );
