@@ -80,26 +80,40 @@ function Footer() {
           <div onClick={()=>navigate('/portfolio')} className="relative cursor-pointer">Portfolio</div>
         </div>
         <div className="flex flex-row items-start justify-start gap-2.5 tab:hidden">
-          <img
-            className="w-6 relative h-6 overflow-hidden shrink-0"
-            alt=""
-            src="/magex.svg"
-          />
-          <img
-            className="w-6 relative h-6 overflow-hidden shrink-0"
-            alt=""
-            src="/letsiconsinsta.svg"
-          />
-          <img
-            className="w-6 relative h-6 overflow-hidden shrink-0"
-            alt=""
-            src="/antdesignfacebookoutlined.svg"
-          />
-          <img
-            className="w-6 relative h-6 overflow-hidden shrink-0"
-            alt=""
-            src="/icbaselinewhatsapp.svg"
-          />
+
+        <a className='h-[24px] cursor-pointer' href='https://www.instagram.com/weddings.by.rishabh/' target='_blank'>
+      <img
+        className="w-6 relative h-6 overflow-hidden shrink-0"
+        alt=""
+        src="/letsiconsinsta.svg"
+      />
+      </a>
+
+      <a className='h-[24px] cursor-pointer' href='https://www.facebook.com/weddingsbyrishabh' target='_blank'>
+      <img
+        className="w-6 relative h-6 overflow-hidden shrink-0"
+        alt=""
+        src="/antdesignfacebookoutlined.svg"
+      />
+      </a>
+
+      <a className='h-[24px] cursor-pointer' href='https://www.youtube.com/@weddingsbyrishabh' target='_blank'>
+      <img
+        className="w-6 relative h-6 overflow-hidden shrink-0"
+        alt=""
+        src="/youtube-icon.svg"
+      />
+      </a>
+
+      <a className='h-[24px] cursor-pointer' href='https://in.pinterest.com/weddingsbyrishabh/' target='_blank'>
+      <img
+        className="w-6 relative h-6 overflow-hidden shrink-0"
+        alt=""
+        src="/pinterest-icon.svg"
+      />
+      </a>
+
+
         </div>
         <div className="flex flex-row items-start justify-center gap-[50px] text-gray-700 tab:flex-col tab:gap-5">
           <div className="relative">© 2024</div>
