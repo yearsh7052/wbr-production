@@ -15,7 +15,7 @@ function StoriesSection() {
       {/* Heading */}
     <div className="flex flex-row items-center justify-center gap-10">
       <div className="w-2.5 relative rounded-981xl bg-darkslateblue-100 h-2.5" />
-      <div className="relative">Stories</div>
+      <div className="relative">Blogs</div>
       <div className="w-2.5 relative rounded-981xl bg-darkslateblue-100 h-2.5" />
     </div>
 
