@@ -23,7 +23,7 @@ function Stories() {
     {/* Heading */}
     <div className='text-81xl w-full  mt-[-200px] text-white font-cormorant-garamond font-semibold
     tab:text-53xl phn:text-23xl hidden '>
-    Stories
+    Blogs
     </div>
     </div>
     <StoriesSection/>
