@@ -11,7 +11,8 @@ function Navbar( { location }) {
     <div className="self-stretch bg-[#F6F5F4] overflow-hidden flex flex-row items-center justify-between py-[15px] px-[25px] xl:px-5 text-xl font-cormorant-garamond mx-5
      phn:px-2 phn:py-2 phn:mx-2">
     <img
-      className="w-auto relative h-8 object-cover"
+      onClick={()=>navigation('/')}
+      className="w-auto relative h-8 object-cover cursor-pointer"
       alt=""
       src="/nav-logo.svg"
     />
@@ -32,7 +33,7 @@ function Navbar( { location }) {
         SERVICES</div>
       <div onClick={()=>navigation('/stories')} 
       className={`${location === "/stories" ? 'font-semibold text-mediumpurple-100' : ''} relative cursor-pointer`}>
-        STORIES</div>
+        BLOGS</div>
       <div onClick={()=>navigation('/aboutus')} 
       className={`${location === "/aboutus" ? 'font-semibold text-mediumpurple-100' : ''} relative cursor-pointer`}>
         ABOUT US</div>
