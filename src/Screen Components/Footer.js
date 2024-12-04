@@ -53,7 +53,7 @@ function Footer() {
     </div>
     </a>
     </div>
-    </div>
+    </div> 
     </div>
 
     {/* Logo and other section */}
@@ -64,7 +64,8 @@ function Footer() {
 
 
       <img
-        className="w-auto relative tab:h-40 phn:h-28 object-cover"
+        onClick={()=>navigate('/')}
+        className="w-auto relative tab:h-40 phn:h-28 object-cover cursor-pointer"
         alt=""
         src="/complete-logo.svg"
       />
@@ -75,7 +76,7 @@ function Footer() {
         <div className="flex flex-row items-start justify-center gap-5 tab:flex-col">
           <div onClick={()=>navigate('/aboutus')} className="relative cursor-pointer">About Us</div>
           <div onClick={()=>navigate('/services')} className="relative cursor-pointer">Services</div>
-          <div onClick={()=>navigate('/stories')} className="relative cursor-pointer">Stories</div>
+          <div onClick={()=>navigate('/stories')} className="relative cursor-pointer">Blogs</div>
           <div onClick={()=>navigate('/clientspeaks')} className="relative cursor-pointer">Client Speaks</div>
           <div onClick={()=>navigate('/portfolio')} className="relative cursor-pointer">Portfolio</div>
         </div>
