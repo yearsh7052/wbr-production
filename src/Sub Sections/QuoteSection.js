@@ -46,7 +46,7 @@ function QuoteSection() {
       <div className="flex-1 relative bg-lavender-100 h-0.5 overflow-hidden" />
       <div className="relative font-semibold">Established Since</div>
       <div className="flex-1 relative bg-lavender-100 h-0.5 overflow-hidden" />
-      <div className="relative font-semibold">2000</div>
+      <div className="relative font-semibold">2015</div>
     </div>
     <div className="relative font-semibold text-lavender-100">{`Beyond Planning `}</div>
     <div className="relative font-semibold text-darkslateblue-100 hidden phn:block">
